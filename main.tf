@@ -42,7 +42,7 @@ resource "terraform_data" "res_based" {
 }
 
 resource "terraform_data" "string_based" {
-  triggers_replace = "test"
+  triggers_replace = "demo1"
 
   provisioner "local-exec" {
     command = "echo this only happens on first create or when the string changes"
