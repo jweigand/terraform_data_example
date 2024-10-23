@@ -17,11 +17,12 @@ terraform {
   }
 }
 
+variable "triggers_replace" {
+  default = "demo"
+}
 
 resource "terraform_data" "bootstrap" {
-  triggers_replace = {
-    value = "demo"
-  }
+  input = var.triggers_replace
 
   provisioner "local-exec" {
     command = "echo this only happens on first create or when the triggers change"
