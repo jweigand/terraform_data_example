@@ -22,7 +22,7 @@ variable "triggers_replace" {
 }
 
 resource "terraform_data" "bootstrap" {
-  input = var.triggers_replace
+  triggers_replace = var.triggers_replace
 
   provisioner "local-exec" {
     command = "echo this only happens on first create or when the triggers change"
