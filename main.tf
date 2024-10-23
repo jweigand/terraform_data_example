@@ -27,3 +27,7 @@ resource "terraform_data" "bootstrap" {
     command = "echo this only happens on first create or when the triggers change"
   }
 }
+
+resource "random_pet" "this" {
+  length = 3
+}
