@@ -30,7 +30,7 @@ resource "terraform_data" "var_based" {
 }
 
 resource "random_pet" "this" {
-  length = 3
+  length = 4
 }
 
 resource "terraform_data" "res_based" {
