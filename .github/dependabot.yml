@@ -1,8 +1,3 @@
-# To get started with Dependabot version updates, you'll need to specify which
-# package ecosystems to update and where the package manifests are located.
-# Please see the documentation for all configuration options:
-# https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
-
 version: 2
 registries:
   terraform:
@@ -11,12 +6,11 @@ registries:
     token: ${{secrets.MY_TERRAFORM_API_TOKEN}}
 
 updates:
-  - package-ecosystem: "terraform" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  - package-ecosystem: "terraform" 
+    directory: "/" 
     registries: "*"
     commit-message:
       prefix: "[dependabot]"
     open-pull-requests-limit: 20
     schedule:
-      interval: "cron"
-      cronjob: "0 19 * * *" # daily at 3:00pm Eastern Time US (ET is UTC-4 during daylight saving)
+      interval: "daily"
