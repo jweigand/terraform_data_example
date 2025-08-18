@@ -16,4 +16,4 @@ updates:
     registries: "*"
     schedule:
       interval: "cron"
-      cronjob: "12 * * * *" # hourly
+      cronjob: "20 16 * * *" # daily at 12:20pm Eastern Time US (ET is UTC-4 during daylight saving)
