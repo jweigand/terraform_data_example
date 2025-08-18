@@ -48,3 +48,16 @@ resource "terraform_data" "string_based" {
     command = "echo this only happens on first create or when the string changes"
   }
 }
+
+output "test" {
+  value = length(terraform_data.string_based)
+}
+
+output "test1" {
+  value = terraform_data.string_based
+}
+
+module "data" {
+  source  = "app.terraform.io/weigand-hcp/data-v1_30_0/terraform"
+  version = "~> 2.0-1.31"
+}
