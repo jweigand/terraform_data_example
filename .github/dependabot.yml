@@ -19,4 +19,4 @@ updates:
     open-pull-requests-limit: 20
     schedule:
       interval: "cron"
-      cronjob: "0 17 * * *" # daily at 1:00pm Eastern Time US (ET is UTC-4 during daylight saving)
+      cronjob: "0 19 * * *" # daily at 3:00pm Eastern Time US (ET is UTC-4 during daylight saving)
