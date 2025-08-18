@@ -16,4 +16,4 @@ updates:
     registries: "*"
     schedule:
       interval: "cron"
-      cronnjob: "12 * * * *" # hourly
+      cronjob: "12 * * * *" # hourly
