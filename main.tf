@@ -58,6 +58,6 @@ output "test1" {
 }
 
 module "data" {
-  source  = "app.terraform.io/weigand-hcp/data-v1_30_0/terraform"
-  version = "~> 2.0-1.31"
+  source  = "app.terraform.io/weigand-hcp/data/terraform"
+  version = "1.0.0"
 }

@@ -11,8 +11,9 @@ registries:
     token: ${{secrets.MY_TERRAFORM_API_TOKEN}}
 
 updates:
-  - package-ecosystem: "" # See documentation for possible values
+  - package-ecosystem: "terraform" # See documentation for possible values
     directory: "/" # Location of package manifests
     registries: "*"
     schedule:
-      interval: "daily"
+      interval: "cron"
+      cronnjob: "0 * * * *" # hourly
