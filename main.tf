@@ -59,5 +59,5 @@ output "test1" {
 
 module "data" {
   source  = "app.terraform.io/weigand-hcp/data/terraform"
-  version = "~> 3.0"
+  version = "~> 4.0"
 }
